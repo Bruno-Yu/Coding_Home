@@ -1,0 +1,108 @@
+.subTitle__square {
+  background: var(--bs-primary);
+  height: 3px;
+  width: 50px;
+}
+.subTitle__square--inactive {
+  background: var(--bs-logo);
+  height: 3px;
+  width: 50px;
+}
+.icon-gradient {
+  background: linear-gradient(
+    180deg,
+    var(--bs-info) 0%,
+    var(--bs-primary) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card__avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.banner {
+  background-image: url(../images/bg_home_mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  .row {
+    height: 336px;
+  }
+  @include pad {
+    background-image: url(../images/bg_home.jpg);
+    .row {
+      height: 680px;
+    }
+  }
+  &__title---gradient {
+    background: linear-gradient(
+      180deg,
+      var(--bs-info) 0%,
+      var(--bs-primary) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__squares {
+    li {
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      background: #fff;
+      z-index: 10;
+      &:first-child {
+        left: -5px;
+        top: -5px;
+      }
+      &:nth-child(2) {
+        right: -5px;
+        top: -5px;
+      }
+      &:nth-child(3) {
+        right: -5px;
+        bottom: -5px;
+      }
+      &:nth-child(4) {
+        left: -5px;
+        bottom: -5px;
+      }
+    }
+  }
+}
+
+.process {
+  &__card__title {
+    z-index: 20;
+    height: 56px;
+    left: 40px;
+    top: -32px;
+  }
+}
+
+.strength___card {
+  li {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgb(128, 127, 127);
+    &:first-child {
+      // background-image: url(../images/info01.jpg)  ;
+      // background-color: rgba(0, 0, 0, 0.3);
+      background-image: url(../images/info01.jpg);
+
+      // backdrop-filter: grayscale(80%);
+    }
+    &:nth-child(2) {
+      background-image: url(../images/info02.jpg);
+    }
+    &:nth-child(3) {
+      background-image: url(../images/info03.jpg);
+    }
+    &:nth-child(4) {
+      background-image: url(../images/info04.jpg);
+    }
+  }
+}

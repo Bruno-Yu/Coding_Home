@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+ <nav class="navbar navbar-expand-lg bg-secondary">
+  <div class="container ">
+    <a class="navbar-brand" href="#">
+      <picture>
+        <source  srcset="./assets/images/logo2.svg" height="24px" width="24px" media="(max-width:768px)">
+        <img  width="175px" height="48px" src="./assets/images/logo.svg" alt="logo">
+      </picture>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="material-icons text-primary">drag_handle</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
+        <li class="nav-item ">
+          <a class="nav-link link-white py-4 py-lg-0 border-lg-bottom-0 border-bottom  border-footer " aria-current="page" href="#">首頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-white py-4 py-lg-0 border-bottom border-footer border-lg-bottom-0" href="#">課程介紹</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-white py-4 py-lg-0 border-bottom border-footer border-lg-bottom-0"><span class="material-icons align-middle me-375">
+account_circle
+</span>登入</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="d-flex w-100">
+  <div class="w-50 bg-primary h-2px"></div>
+  <div class="w-50 bg-info h-2px"></div>
+</div>
+
+    <%- contents %>
+
+    <footer class="footer bg-secondary">
+      <p class="text-center text-footer py-4 py-md-6">Coding Home © 2022 All Rights Reserved</p>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
