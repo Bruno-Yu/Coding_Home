@@ -113,22 +113,21 @@
 }
 
 .reviews {
-  .container{
+  .container {
     max-width: 900px;
   }
-    @include pad {
+  @include pad {
     background: url(../images/bg_share.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
   &__swiper__img {
-
     object-fit: cover;
     margin-bottom: 45px;
     border: 1px solid #ffff;
     // border-image-outset: 10px -10px;
-    @include pad{
+    @include pad {
       max-width: 525px;
     }
   }
@@ -137,7 +136,7 @@
     border-radius: 32px 32px 32px 0px;
     padding: 24px;
     background: #ffff;
-    @include pad{
+    @include pad {
       margin-top: -160px;
       max-width: 416px;
       float: right;
@@ -159,7 +158,7 @@
     top: -40px;
     z-index: 20;
   }
-  &__swiper_pagination{
+  &__swiper_pagination {
     margin-top: 32px;
     display: flex;
     align-items: center;
@@ -167,35 +166,34 @@
     width: 150px;
     margin-right: auto;
     margin-left: auto;
-    li{
+    li {
       display: block;
       margin-right: 8px;
-      &:first-child{
+      &:first-child {
         margin-right: 18px;
       }
-      &:last-child{
+      &:last-child {
         margin-left: 18px;
       }
-
     }
-    @include mac{
+    @include mac {
       margin-top: -24px;
       margin-left: 170px;
     }
   }
-  .dot{
+  .dot {
     display: block;
     width: 8px;
     height: 8px;
-        background: var(--bs-primary);
-        border-radius: 50%;
+    background: var(--bs-primary);
+    border-radius: 50%;
   }
-  .round{
-       width: 16px;
-      border-radius: 20% 20% 20% 20%;
+  .round {
+    width: 16px;
+    border-radius: 20% 20% 20% 20%;
   }
 }
 
-.join.container{
+.join.container {
   max-width: 966px;
 }
