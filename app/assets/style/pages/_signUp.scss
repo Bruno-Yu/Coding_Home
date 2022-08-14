@@ -1,0 +1,33 @@
+.progressBar {
+  // background: var(--bs-secondary);
+  .container {
+    position: relative;
+    max-width: 832px;
+  }
+  &__num {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bs-secondary);
+    display: inline-block;
+    font-size: 14px;
+  }
+  .active {
+    background: var(--bs-primary);
+    color: white;
+    outline: 1px solid var(--bs-primary);
+  }
+  &__bar {
+    top: 12px;
+    left: 27px;
+    width: calc(100% - 55px);
+    height: 1px;
+    background: #ffff;
+    position: absolute;
+    z-index: -1;
+  }
+}
