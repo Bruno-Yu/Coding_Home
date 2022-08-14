@@ -27,13 +27,13 @@
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
         <li class="nav-item ">
-          <a class="nav-link link-white py-4 py-lg-0 border-lg-bottom-0 border-bottom  border-footer " aria-current="page" href="#">首頁</a>
+          <a class="nav-link link-white py-4 py-lg-0  " aria-current="page" href="#">首頁</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link-white py-4 py-lg-0 border-bottom border-footer border-lg-bottom-0" href="#">課程介紹</a>
+          <a class="nav-link link-white py-4 py-lg-0 " href="#">課程介紹</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link-white py-4 py-lg-0 border-bottom border-footer border-lg-bottom-0"><span class="material-icons align-middle me-375">
+          <a class="nav-link link-white py-4 py-lg-0 " href="#"  data-bs-toggle="modal" data-bs-target="#loginModal"><span class="material-icons align-middle me-375">
 account_circle
 </span>登入</a>
         </li>
@@ -41,12 +41,13 @@ account_circle
     </div>
   </div>
 </nav>
-<div class="d-flex w-100">
+<div class="d-flex w-100 container-fluid">
   <div class="w-50 bg-primary h-2px"></div>
   <div class="w-50 bg-info h-2px"></div>
 </div>
 
-    
+<div class="container-fluid">
+  
 <section class="banner">
   <div class="container">
     <div class="row d-flex justify-content-center align-items-center">
@@ -511,8 +512,8 @@ account_circle
   </div>
 </section>
 
-<section class="join">
-  <div class="container py-10 py-lg-20">
+<section class="join my-10 my-lg-20">
+  <div class="container">
     <div
       class="rounded-5 bg-poster py-10 px-6 text-center p-lg-12 text-lg-start d-lg-flex align-items-center"
     >
@@ -531,9 +532,38 @@ account_circle
 </section>
 
 
-    <footer class="footer bg-secondary">
-      <p class="text-center text-footer py-4 py-md-6">Coding Home © 2022 All Rights Reserved</p>
+</div>
+
+    <footer class="footer bg-secondary ">
+      <p class="text-center text-footer py-4 py-md-6 mb-0">Coding Home © 2022 All Rights Reserved</p>
     </footer>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content position-relative">
+        <button type="button" class="btn-close text-white position-absolute" style="right:24px; top:24px" data-bs-dismiss="modal" aria-label="Close"></button>      
+      <div class="modal-body modal__container">
+        <h4 class="modal-title mt-10 mb-6 mt-lg-6 text-center text-white " id="loginModalLabel">登入</h4>
+        <form class="mb-10">
+  <div class="mb-4">
+    <label for="loginEmail" class="form-label">信箱</label>
+    <input type="email" class="form-control" id="loginEmail" placeholder="請輸入信箱" >
+    
+  </div>
+  <div class="mb-4 ">
+    <label for="loginPassword" class="form-label">密碼</label>
+    <input type="password" class="form-control" id="loginPassword w-100" placeholder="請輸入密碼">
+  </div>
+
+  <a href="./signUp.html" type="submit" class="btn bg-gradient w-100 mb-6 mb-lg-12">登入</a>
+  <div class="bg-logo text-center mb-8" style="height:1px" ><span class="d-inline-block fs-7 bg-secondary px-4 align-top" style="z-index:20; float: center; margin-top:-9px">其他登入方式</span></div>
+  <a href="./signUp.html" class="btn btn-outline-white w-100 mb-4"><img class="loginIcon" src="./assets/images/icon_fb.svg" alt="icon_fb"  >Facebook登入</a>
+  <a href="./signUp.html" class="btn btn-outline-white w-100"><img class="loginIcon" src="./assets/images/icon_google.svg" alt="icon_google"  >Google登入</a>
+</form>
+  </div>
+    </div>
+  </div>
+</div>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
