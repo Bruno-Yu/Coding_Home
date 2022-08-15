@@ -1,0 +1,40 @@
+---
+title: checkout-付款成功
+layout: ./app/layout.ejs
+engine: ejs
+---
+
+<section class="progressBar py-6 d-block mb-6 mb-lg-12">
+  <div class="container">
+    <ul class="list-unstyled d-flex justify-content-between">
+      <li class="text-center">
+        <span class="progressBar__num active">1</span>
+        <p class="mt-2 text-primary">課程報名</p>
+      </li>
+      <li class="text-center">
+        <span class="progressBar__num active">2</span>
+        <p class="mt-2 text-primary">信用卡付款</p>
+      </li>
+      <li class="text-center">
+        <span class="progressBar__num active">3</span>
+        <p class="mt-2 text-primary">付款成功</p>
+      </li>
+    </ul>
+    <div class="progressBar__bar">
+      <div class="item bg-primary"></div>
+      <div class="item bg-primary"></div>
+    </div>
+  </div>
+</section>
+
+<div class="container pb-10 pb-lg-20">
+  <section class="creditCard__msg bg-secondary p-6 px-lg-8 py-lg-12 ">
+    <h4 class="mb-7 mb-lg-12 text-center">  <span class="material-icons-outlined fs-0 text-primary d-inline-block me-4">verified</span>信用卡付款</h4>
+  
+  <p class="mb-6">恭喜您已完成<span class="fw-bold">「2022 Python 全攻略｜從入門到實務」</span>課程報名，請注意郵件訊息，家教老師將與您聯繫！</p>
+  <div class="text-center">
+    <button class="btn bg-gradient">看看其他課程</button>
+  </div>
+  </section>
+</div>
+

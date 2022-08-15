@@ -61,6 +61,7 @@ $utilities: map-merge(
     // scss-docs-start utils-position
     "position":
       (
+        responsive: true,
         property: position,
         values: static relative absolute fixed sticky,
       ),
@@ -706,7 +707,8 @@ $utilities: map-merge(
           cover: cover,
           contain: contain,
         ),
-      )
+      ),
+      
   ),
   $utilities
 );

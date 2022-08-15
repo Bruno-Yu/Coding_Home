@@ -1,0 +1,11 @@
+
+.creditCard{
+    max-width: 416px;
+    margin: 0 auto;
+
+  .btn{
+  @include mac{
+    max-width: 168px;
+  }
+}
+}

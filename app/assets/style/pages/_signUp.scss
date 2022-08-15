@@ -23,11 +23,82 @@
   }
   &__bar {
     top: 12px;
-    left: 27px;
+    left: 28px;
+    display: flex;
     width: calc(100% - 55px);
     height: 1px;
     background: #ffff;
     position: absolute;
     z-index: -1;
+    .item{
+      height: 1px;
+      width: 50%;
+    }
+  }
+}
+
+
+
+
+.triangle{
+  width: 0px;
+  height: 0px;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-top: 12px solid var(--bs-secondary);
+  @include mac{
+    display: none;
+  }
+}
+.triangle-lg{
+  display: none;
+  width: 0px;
+  height: 0px;
+  border-right: 12px solid var(--bs-secondary);
+  border-left: 12px solid transparent;
+  border-top: 12px solid transparent;
+  @include mac{
+    display: block;
+  }
+}
+
+
+.intro{
+  @include mac{
+    position:absolute;
+    max-width: 416px;
+    top: 220px;
+    right: 800px;
+    z-index:20;
+    &::after{
+  content:'';
+  position:absolute;
+  top: 150px;
+  right:-13px;
+  width: 0px;
+  height: 0px;
+  border-left: 12px solid var(--bs-secondary);
+  border-bottom: 12px solid transparent;
+  border-top: 12px solid transparent;
+    }
+  }
+}
+
+.signUp{
+  @include mac{
+    max-width: 856px;
+    flex-grow: 1;
+        margin-bottom: 144px;
+  }
+  .container{
+    max-width: 710px;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+  .btn{
+    @include mac{
+      max-width: 168px;
+    }
   }
 }
