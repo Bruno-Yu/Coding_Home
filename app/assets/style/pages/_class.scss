@@ -1,0 +1,15 @@
+.class__filter {
+  .container {
+    max-width: 1076px;
+  }
+}
+.classes {
+  .container {
+    max-width: 1076px;
+  }
+  &__content {
+    @include mac {
+      width: 576px;
+    }
+  }
+}
