@@ -30,74 +30,69 @@
     background: #ffff;
     position: absolute;
     z-index: -1;
-    .item{
+    .item {
       height: 1px;
       width: 50%;
     }
   }
 }
 
-
-
-
-.triangle{
+.triangle {
   width: 0px;
   height: 0px;
   border-right: 12px solid transparent;
   border-left: 12px solid transparent;
   border-top: 12px solid var(--bs-secondary);
-  @include mac{
+  @include mac {
     display: none;
   }
 }
-.triangle-lg{
+.triangle-lg {
   display: none;
   width: 0px;
   height: 0px;
   border-right: 12px solid var(--bs-secondary);
   border-left: 12px solid transparent;
   border-top: 12px solid transparent;
-  @include mac{
+  @include mac {
     display: block;
   }
 }
 
-
-.intro{
-  @include mac{
-    position:absolute;
+.intro {
+  @include mac {
+    position: absolute;
     max-width: 416px;
     top: 220px;
     right: 800px;
-    z-index:20;
-    &::after{
-  content:'';
-  position:absolute;
-  top: 150px;
-  right:-13px;
-  width: 0px;
-  height: 0px;
-  border-left: 12px solid var(--bs-secondary);
-  border-bottom: 12px solid transparent;
-  border-top: 12px solid transparent;
+    z-index: 20;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 150px;
+      right: -13px;
+      width: 0px;
+      height: 0px;
+      border-left: 12px solid var(--bs-secondary);
+      border-bottom: 12px solid transparent;
+      border-top: 12px solid transparent;
     }
   }
 }
 
-.signUp{
-  @include mac{
+.signUp {
+  @include mac {
     max-width: 856px;
     flex-grow: 1;
-        margin-bottom: 144px;
+    margin-bottom: 144px;
   }
-  .container{
+  .container {
     max-width: 710px;
     margin-right: auto;
     margin-left: auto;
-
   }
-  .btn{
-    @include mac{
+  .btn {
+    @include mac {
       max-width: 168px;
     }
   }

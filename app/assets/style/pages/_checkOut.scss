@@ -1,11 +1,10 @@
+.creditCard {
+  max-width: 416px;
+  margin: 0 auto;
 
-.creditCard{
-    max-width: 416px;
-    margin: 0 auto;
-
-  .btn{
-  @include mac{
-    max-width: 168px;
+  .btn {
+    @include mac {
+      max-width: 168px;
+    }
   }
-}
 }

@@ -277,8 +277,8 @@ $spacers: (
   16: $spacer * 4,
   17: $spacer * 4.25,
   18: $spacer * 5,
-    19: $spacer * 5.25,
-      20: $spacer * 5.5,
+  19: $spacer * 5.25,
+  20: $spacer * 5.5,
   42: $spacer * 10.5,
 ) !default;
 
@@ -340,7 +340,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   // xl: 1200px,
-  // xxl: 1400px,,,,,,
+  // xxl: 1400px,,,,,,,
 ) !default;
 // scss-docs-end grid-breakpoints
 
