@@ -13917,4 +13917,18 @@ fieldset:disabled .btn {
   max-width: 204px;
 }
 
+.class__filter .container {
+  max-width: 1076px;
+}
+
+.classes .container {
+  max-width: 1076px;
+}
+
+@media (min-width: 992px) {
+  .classes__content {
+    width: 576px;
+  }
+}
+
 /*# sourceMappingURL=all.css.map */
