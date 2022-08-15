@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
         <li class="nav-item ">
-          <a class="nav-link link-white py-4 py-lg-0  " aria-current="page" href="#">首頁</a>
+          <a class="nav-link link-white py-4 py-lg-0  " aria-current="page" href="./index.html">首頁</a>
         </li>
         <li class="nav-item">
           <a class="nav-link link-white py-4 py-lg-0 " href="#">課程介紹</a>
@@ -41,14 +41,14 @@ account_circle
     </div>
   </div>
 </nav>
-<div class="d-flex w-100 container-fluid">
+<div class="d-flex w-100">
   <div class="w-50 bg-primary h-2px"></div>
   <div class="w-50 bg-info h-2px"></div>
 </div>
 
 <div class="container-fluid">
   
-<section class="progressBar py-6 d-block mb-12">
+<section class="progressBar py-6 d-block mb-6 mb-lg-12">
   <div class="container">
     <ul class="list-unstyled d-flex justify-content-between">
       <li class="text-center">
@@ -67,6 +67,134 @@ account_circle
     <div class="progressBar__bar"></div>
   </div>
 </section>
+
+<div
+  class="position-lg-relative d-lg-flex justify-content-end container p-0 px-lg-3"
+>
+  <section class="intro bg-secondary" style="outline: 1px solid black">
+    <div class="container p-6 text-center">
+      <img
+        class="card__avatar object-cover rounded-circle"
+        src="./assets/images/teacher01.jpg"
+        alt="teacher01"
+        style="outline: 3px solid var(--bs-primary)"
+      />
+      <p class="mt-4 mb-2 fw-b">2022 Python 全攻略｜從入門到實務</p>
+      <p class="text-primary mb-2">前端語言</p>
+      <p>
+        帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的
+        HTML 語法出發。
+      </p>
+    </div>
+  </section>
+  <div class="d-flex justify-content-center mb-8 d-lg-none">
+    <div class="triangle"></div>
+  </div>
+
+  <section class="signUp bg-article mb-10">
+    <div class="container p-6 text-center text-lg-start py-lg-12">
+      <h4 class="mb-6 text-center">課程報名</h4>
+      <h6 class="mb-4 mb-lg-6">選擇付款方式</h6>
+      <div class="row row-cols-2 row-cols-lg-4 mb-8">
+        <div class="col mb-2 mb-lg-0">
+          <button class="btn btn-outline-primary w-100 p-4" type="button">
+            信用卡付款
+          </button>
+        </div>
+        <div class="col mb-2 mb-lg-0">
+          <button class="btn btn-outline-white w-100 p-4" type="button">
+            超商繳款
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn-outline-white w-100 p-4" type="button">
+            ATM轉帳
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn-outline-white w-100 p-4" type="button">
+            12期分期付款
+          </button>
+        </div>
+      </div>
+      <h6 class="mb-4 mb-lg-6">訂單資訊</h6>
+      <form class="text-start">
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col mb-4">
+            <label for="checkOutName" class="form-label">姓名</label>
+            <input
+              type="text"
+              class="form-control"
+              id="checkOutName"
+              placeholder="請輸入姓名"
+            />
+          </div>
+          <div class="col mb-4">
+            <label for="checkOutTel" class="form-label">電話</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="checkOutTel"
+              placeholder="請輸入電話號碼"
+            />
+          </div>
+        </div>
+
+        <div class="mb-4 mb-lg-6">
+          <label for="checkOutEmail" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="checkOutEmail"
+            placeholder="請輸入Email"
+          />
+        </div>
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="mb-4 mb-lg-6 col">
+            <label for="checkOutClass" class="form-label">課程</label>
+            <select
+              class="form-select"
+              id="checkOutClass"
+              aria-label="checkOutClass"
+            >
+              <option selected>10堂50分鐘</option>
+              <option value="1">10堂50分鐘</option>
+              <option value="2">10堂50分鐘</option>
+              <option value="3">10堂50分鐘</option>
+            </select>
+          </div>
+          <div class="mb-4 col">
+            <label for="checkOutDate" class="form-label">想預約的日期</label>
+            <input
+              type="date"
+              class="form-control"
+              id="checkOutDate"
+              type="email"
+              placeholder="請選擇日期"
+            />
+          </div>
+        </div>
+        <div class="mb-4 mb-lg-6">
+          <label for="checkOutLocation" class="form-label">上課地點</label>
+          <input
+            type="text"
+            class="form-control"
+            id="checkOutLocation"
+            placeholder="請輸上課地點"
+          />
+        </div>
+        <div class="d-lg-flex justify-content-between">
+          <div class="mt-2 mb-6 mb-lg-0">
+            <h6>NT$1600</h6>
+          </div>
+          <a href="./checkOut.html" type="submit" class="btn bg-gradient w-100"
+            >前往結帳</a
+          >
+        </div>
+      </form>
+    </div>
+  </section>
+</div>
 
 
 </div>
