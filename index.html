@@ -9,7 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style/all.css">
+      <!-- datepicker -->
+        <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css"
+  />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
@@ -62,10 +71,10 @@ account_circle
         <p class="fs-4 mb-6 fs-md-0">在實踐中化理想為現實</p>
         <p class="fs-8 fs-md-6">全台最專業師資｜到府程式家教｜客製化課程</p>
         <ul class="banner__squares">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li class="position-absolute top-0 start-0 translate-middle"></li>
+          <li class="position-absolute top-0 start-100 translate-middle"></li>
+          <li class="position-absolute top-100 start-100 translate-middle"></li>
+          <li class="position-absolute top-100 start-0 translate-middle"></li>
         </ul>
       </div>
     </div>
@@ -77,7 +86,7 @@ account_circle
     <div class="text-center mb-6 d-md-none">
       <h2 class="fs-4">手把手帶你</h2>
       <h2 class="fs-4 mb-4">親自到家教到會</h2>
-      <div class="subTitle__square mx-auto"></div>
+      <div class="subTitle__square bg-primary mx-auto"></div>
     </div>
     <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 list-unstyled">
       <li
@@ -85,19 +94,17 @@ account_circle
       >
         <h2 class="fs-4">手把手帶你</h2>
         <h2 class="fs-4 mb-4">親自到家教到會</h2>
-        <div class="subTitle__square"></div>
+        <div class="subTitle__square bg-primary"></div>
       </li>
       <li class="col mb-6 mb-lg-0">
         <div
           class="bg-poster bg-lg-secondary rounded-4 text-center text-lg-logo py-12"
         >
           <span
-            class="icon-gradient material-icons fs-0 mb-9 d-line-block d-lg-none"
+            class=" material-icons fs-0 mb-9 "
             >code</span
           >
-          <span class="material-icons fs-0 mb-9 d-none d-lg-inline-block"
-            >code</span
-          >
+
           <h5 class="mb-4">超過 100 種專業課程</h5>
           <p>學習標準化的電腦形式語言<br />培養運算思維和邏輯素養</p>
         </div>
@@ -107,21 +114,19 @@ account_circle
           class="bg-poster bg-lg-secondary rounded-4 text-center text-lg-logo py-12"
         >
           <span
-            class="icon-gradient material-icons fs-0 mb-9 d-line-block d-lg-none"
+            class="material-icons fs-0 mb-9 "
             >rocket_launch</span
           >
-          <span class="material-icons fs-0 mb-9 d-none d-lg-inline-block"
-            >rocket_launch</span
-          >
+
           <h5 class="mb-4">高效學習</h5>
           <p>客製化專屬課表<br />讓學習變簡單</p>
         </div>
       </li>
       <li class="col">
         <div
-          class="bg-poster rounded-4 text-center py-12 border-lg-1 border-lg-primary"
+          class="bg-poster  bg-lg-secondary rounded-4 text-center text-lg-logo py-12"
         >
-          <span class="icon-gradient material-icons fs-0 mb-9">fmd_good</span>
+          <span class="material-icons fs-0 mb-9">fmd_good</span>
           <h5 class="mb-4">指定地點</h5>
           <p>專業老師到你指定的地點<br />一對一高效學習</p>
         </div>
@@ -134,7 +139,7 @@ account_circle
   <div class="container py-10 py-lg-20">
     <div class="text-center mb-6 mb-md-12 mb-lg-18">
       <h2 class="fs-4 mb-4 fs-md-3">預期上課流程</h2>
-      <div class="subTitle__square mx-auto"></div>
+      <div class="subTitle__square bg-primary mx-auto"></div>
     </div>
     <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 list-unstyled">
       <li class="col mb-12 mb-lg-0">
@@ -186,7 +191,7 @@ account_circle
     <div class="text-center mb-6 mb-md-12 mb-lg-18">
       <h2 class="fs-4 fs-md-3">你想要學習的程式</h2>
       <h2 class="fs-4 mb-4 fs-md-3">都在這裡</h2>
-      <div class="subTitle__square mx-auto"></div>
+      <div class="subTitle__square bg-primary mx-auto"></div>
     </div>
     <div class="d-flex overflow-scroll overflow-lg-auto">
       <button
@@ -247,12 +252,12 @@ account_circle
   <div class="container py-10 py-lg-20">
     <div class="text-center mb-6 mb-md-12 mb-lg-18">
       <h2 class="fs-4 mb-4 fs-md-3">熱門推薦課程</h2>
-      <div class="subTitle__square mx-auto"></div>
+      <div class="subTitle__square bg-primary mx-auto"></div>
     </div>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
       <div class="col mb-6 mb-lg-0">
-        <div class="bg-secondary rounded-5">
-          <div class="text-center px-8 pt-6 pb-4 border-bottom border-white">
+        <div class="bg-secondary rounded-5 h-100 d-flex flex-column justify-content-between ">
+          <div class="text-center px-8 pt-6 pb-4 ">
             <img
               class="card__avatar object-cover rounded-circle"
               src="./assets/images/teacher01.jpg"
@@ -267,14 +272,14 @@ account_circle
               語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入...
             </p>
           </div>
-          <div class="text-center py-4">
+          <div class="text-center py-4 border-top border-white">
             <p>50分鐘<span class="fs-2 ms-2">NT$1600</span></p>
           </div>
         </div>
       </div>
       <div class="col mb-6 mb-lg-0">
-        <div class="bg-secondary rounded-5">
-          <div class="text-center px-8 pt-6 pb-4 border-bottom border-white">
+        <div class="bg-secondary rounded-5 h-100 d-flex flex-column justify-content-between">
+          <div class="text-center px-8 pt-6 pb-4 ">
             <img
               class="card__avatar object-cover rounded-circle"
               src="./assets/images/teacher02.jpg"
@@ -287,14 +292,14 @@ account_circle
               Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態型別系...
             </p>
           </div>
-          <div class="text-center py-4">
+          <div class="text-center py-4 border-top border-white">
             <p>50分鐘<span class="fs-2 ms-2">NT$2200</span></p>
           </div>
         </div>
       </div>
       <div class="col mb-6 mb-md-0">
-        <div class="bg-secondary rounded-5">
-          <div class="text-center px-8 pt-6 pb-4 border-bottom border-white">
+        <div class="bg-secondary rounded-5 h-100 d-flex flex-column justify-content-between">
+          <div class="text-center px-8 pt-6 pb-4 ">
             <img
               class="card__avatar object-cover rounded-circle"
               src="./assets/images/teacher03.jpg"
@@ -310,14 +315,14 @@ account_circle
               可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡單的...
             </p>
           </div>
-          <div class="text-center py-4">
+          <div class="text-center py-4 border-top border-white">
             <p>50分鐘<span class="fs-2 ms-2">NT$1800</span></p>
           </div>
         </div>
       </div>
       <div class="col mb-0 mb-md-0">
-        <div class="bg-secondary rounded-5">
-          <div class="text-center px-8 pt-6 pb-4 border-bottom border-white">
+        <div class="bg-secondary rounded-5 h-100 d-flex flex-column justify-content-between">
+          <div class="text-center px-8 pt-6 pb-4 ">
             <img
               class="card__avatar object-cover rounded-circle"
               src="./assets/images/teacher04.jpg"
@@ -330,7 +335,7 @@ account_circle
               Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用工具。...
             </p>
           </div>
-          <div class="text-center py-4">
+          <div class="text-center py-4 border-top border-white">
             <p>50分鐘<span class="fs-2 ms-2">NT$1100</span></p>
           </div>
         </div>
@@ -342,7 +347,7 @@ account_circle
   </div>
 </section>
 
-<section class="strength container-fluid">
+<section class="strength ">
   <ul
     class="strength___card row row-cols-1 list-unstyled row-cols-md-2 row-cols-lg-4"
   >
@@ -353,12 +358,11 @@ account_circle
         >
           question_answer
         </span>
-        <div class="text-center text-lg-start mb-8 mb-md-12 mb-lg-18">
+        <div class="position-relative z-index-21 text-center text-lg-start mb-8 mb-md-12 mb-lg-18">
           <h2 class="fs-4 mb-4 fs-md-3">對症下藥，專案製作</h2>
-          <div class="subTitle__square mx-auto d-lg-none"></div>
-          <div class="subTitle__square--inactive d-none d-lg-block"></div>
+          <div class="subTitle__square bg-primary mx-auto ms-lg-0 bg-lg-logo "></div>
         </div>
-        <p class="text-logo">除了可以瘋狂提問之外<br />還有機會一起完成專案</p>
+        <p >除了可以瘋狂提問之外<br />還有機會一起完成專案</p>
       </div>
     </li>
     <li class="col py-10 py-lg-12 px-12">
@@ -368,12 +372,11 @@ account_circle
         >
           tips_and_updates
         </span>
-        <div class="text-center text-lg-start mb-8 mb-md-12 mb-lg-18">
+        <div class="position-relative z-index-21 text-center text-lg-start mb-8 mb-md-12 mb-lg-18">
           <h2 class="fs-4 mb-4 fs-md-3">激發你的學習潛力</h2>
-          <div class="subTitle__square mx-auto d-lg-none"></div>
-          <div class="subTitle__square--inactive d-none d-lg-block"></div>
+          <div class="subTitle__square bg-primary mx-auto ms-lg-0 bg-lg-logo "></div>
         </div>
-        <p class="text-logo">
+        <p >
           進度制課程安排&個人化學習建議<br />有效管理你的學習動力
         </p>
       </div>
@@ -385,12 +388,11 @@ account_circle
         >
           thumb_up_alt
         </span>
-        <div class="text-center text-lg-start mb-8 mb-md-12 mb-lg-18">
+        <div class="position-relative z-index-21 text-center text-lg-start mb-8 mb-md-12 mb-lg-18">
           <h2 class="fs-4 mb-4 fs-md-3">學習效率</h2>
-          <div class="subTitle__square mx-auto d-lg-none"></div>
-          <div class="subTitle__square--inactive d-none d-lg-block"></div>
+          <div class="subTitle__square bg-primary mx-auto ms-lg-0 bg-lg-logo "></div>
         </div>
-        <p class="text-logo">針對學員狀況調整內容與步調<br />學習精準最有效</p>
+        <p >針對學員狀況調整內容與步調<br />學習精準最有效</p>
       </div>
     </li>
     <li class="col py-10 py-lg-12 px-12">
@@ -400,12 +402,11 @@ account_circle
         >
           supervisor_account
         </span>
-        <div class="text-center text-lg-start mb-8 mb-md-12 mb-lg-18">
+        <div class="position-relative z-index-21 text-center text-lg-start mb-8 mb-md-12 mb-lg-18">
           <h2 class="fs-4 mb-4 fs-md-3">一對一指導</h2>
-          <div class="subTitle__square mx-auto d-lg-none"></div>
-          <div class="subTitle__square--inactive d-none d-lg-block"></div>
+          <div class="subTitle__square bg-primary mx-auto ms-lg-0 bg-lg-logo "></div>
         </div>
-        <p class="text-logo">針對目的進行客製化課程安排 快速的學以致用</p>
+        <p >針對目的進行客製化課程安排 快速的學以致用</p>
       </div>
     </li>
   </ul>
@@ -415,7 +416,7 @@ account_circle
   <div class="container py-10 py-lg-20">
     <div class="text-center mb-6 mb-md-12 mb-lg-18">
       <h2 class="fs-4 mb-4 fs-md-3">文章分享</h2>
-      <div class="subTitle__square mx-auto"></div>
+      <div class="subTitle__square bg-primary mx-auto "></div>
     </div>
     <div class="row row-cols-1 row-cols-lg-3">
       <div class="col mb-6 mb-lg-0">
@@ -476,12 +477,12 @@ account_circle
   </div>
 </section>
 
-<section class="reviews">
+<!-- <section class="reviews">
   <div class="container py-10 py-lg-20">
     <div class="text-center mb-6 mb-md-12 mb-lg-18">
       <h2 class="fs-4 fs-md-3">專屬你的學習課程</h2>
       <h2 class="fs-4 mb-4 fs-md-3">超過 3000 位學員得到了程式超能力</h2>
-      <div class="subTitle__square mx-auto"></div>
+      <div class="subTitle__square bg-primary mx-auto "></div>
     </div>
     <div class="reviews__swiper">
       <img
@@ -510,7 +511,75 @@ account_circle
       </ul>
     </div>
   </div>
+</section> -->
+
+<section class="reviews">
+  <div class="container py-10 py-lg-20">
+    <div class="text-center mb-6 mb-md-12 mb-lg-18">
+      <h2 class="fs-4 fs-md-3">專屬你的學習課程</h2>
+      <h2 class="fs-4 mb-4 fs-md-3">超過 3000 位學員得到了程式超能力</h2>
+      <div class="subTitle__square bg-primary mx-auto"></div>
+    </div>
+    <div class="reviews__swiper swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="reviews__swiper__img__border">
+            <img class="reviews__swiper__img  rounded-3 img-fluid" src="./assets/images/share.jpg" alt="share" />
+          </div>
+
+          <div class="reviews__swiper__content">
+            <img class="reviews__swiper__content__avater" src="./assets/images/student01.jpg" alt="student01" />
+            <h6 class="reviews__swiper__content__color">老師很有耐心</h6>
+            <p class="reviews__swiper__content__color mt-1">
+              老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="reviews__swiper__img rounded-5 img-fluid" src="./assets/images/share.jpg" alt="share" />
+          <div class="reviews__swiper__content">
+            <img class="reviews__swiper__content__avater" src="./assets/images/student02.jpg" alt="student02" />
+            <h6 class="reviews__swiper__content__color">老師很有耐心</h6>
+            <p class="reviews__swiper__content__color mt-1">
+              老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+
+          <img class="reviews__swiper__img rounded-3 img-fluid" src="./assets/images/share.jpg" alt="share" />
+          <div class="reviews__swiper__content">
+            <img class="reviews__swiper__content__avater" src="./assets/images/student03.jpg" alt="student03" />
+            <h6 class="reviews__swiper__content__color">老師很有耐心</h6>
+            <p class="reviews__swiper__content__color mt-1">
+              老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="reviews__swiper__img rounded-5 img-fluid" src="./assets/images/share.jpg" alt="share" />
+          <div class="reviews__swiper__content">
+            <img class="reviews__swiper__content__avater" src="./assets/images/student04.jpg" alt="student04" />
+            <h6 class="reviews__swiper__content__color">老師很有耐心</h6>
+            <p class="reviews__swiper__content__color mt-1">
+              老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！
+            </p>
+          </div>
+        </div>
+      </div>
+      <ul class="reviews__swiper_pagination list-unstyled">
+        <li class="function__prev"><span class="material-icons">arrow_back</span></li>
+        <li class="function__pagination d-flex align-items-center gap-2"></li>
+        <!--         <li><span class="dot"></span></li>
+        <li><span class="dot"></span></li>
+        <li><span class="dot round"></span></li>
+        <li><span class="dot"></span></li> -->
+        <li class="function__next"><span class="material-icons"> arrow_forward </span></li>
+      </ul>
+    </div>
+  </div>
 </section>
+
 
 <section class="join my-10 my-lg-20">
   <div class="container">
@@ -565,8 +634,13 @@ account_circle
   </div>
 </div>
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
+<script src="./assets/js/all.js"></script>
+  
+  
   </body>
 
 </html>
