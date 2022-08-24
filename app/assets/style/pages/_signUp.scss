@@ -97,3 +97,31 @@
     }
   }
 }
+
+// datepicker
+
+.datepicker-cell {
+  color: black;
+  &:not(.disabled):hover {
+    background-color: var(--bs-primary);
+    color: white;
+    cursor: pointer;
+  }
+
+  &.focused:not(.selected) {
+    // background-color: $dp-cell-focus-background-color;
+    background-color: var(--bs-primary);
+    color: white;
+  }
+
+  &.selected {
+    &,
+    &:hover {
+      background-color: var(--bs-primary);
+      color: white;
+      // background-color: $dp-cell-selected-background-color;
+      // color: $dp-cell-selected-color;
+      // font-weight: $dp-cell-selected-font-weight;
+    }
+  }
+}

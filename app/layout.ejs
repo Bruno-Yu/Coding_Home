@@ -7,12 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-  <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+<body class="container-fluid">
 <nav class="navbar navbar-expand-lg bg-secondary">
   <div class="container ">
     <a class="navbar-brand" href="./index.html">
@@ -27,13 +33,13 @@
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
         <li class="nav-item ">
-          <a class="nav-link link-white py-4 py-lg-0  " aria-current="page" href="./index.html">首頁</a>
+          <a class="nav-link  py-4 py-lg-0  " aria-current="page" href="./index.html">首頁</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link-white py-4 py-lg-0 " href="./class.html">課程介紹</a>
+          <a class="nav-link  py-4 py-lg-0 " href="./class.html">課程介紹</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link-white py-4 py-lg-0 " href="#"  data-bs-toggle="modal" data-bs-target="#loginModal"><span class="material-icons align-middle me-375">
+          <a class="nav-link  py-4 py-lg-0 " href="#"  data-bs-toggle="modal" data-bs-target="#loginModal"><span class="material-icons align-middle me-375">
 account_circle
 </span>登入</a>
         </li>
@@ -46,14 +52,14 @@ account_circle
   <div class="w-50 bg-info h-2px"></div>
 </div>
 
-<div class="container-fluid">
+<div >
   <%- contents %>
 
 </div>
 
-    <footer class="footer bg-secondary ">
-      <p class="text-center text-footer py-4 py-md-6 mb-0">Coding Home © 2022 All Rights Reserved</p>
-    </footer>
+<footer class="footer bg-secondary ">
+  <p class="text-center text-footer py-4 py-md-6 mb-0">Coding Home © 2022 All Rights Reserved</p>
+</footer>
 <!-- Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -82,8 +88,13 @@ account_circle
   </div>
 </div>
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
+<script src="./assets/js/all.js"></script>
+  
+  
   </body>
 
 </html>
