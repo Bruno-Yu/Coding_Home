@@ -11,7 +11,12 @@
   --bs-nav-link-hover-color: var(--bs-primary);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
 }
-
+legend {
+  float: none; // 1
+  width: auto; //2
+  margin-bottom: 0px; //3
+  line-height: 1;
+}
 .loginIcon {
   width: 24px;
   height: 24px;
