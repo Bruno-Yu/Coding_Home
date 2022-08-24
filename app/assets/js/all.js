@@ -12,7 +12,7 @@ $(function () {
   const reviewsSwiper = new Swiper(".reviews__swiper", {
     effect: "fade",
     fadeEffect: {
-      crossFade: true
+      crossFade: true,
     },
     navigation: {
       nextEl: ".function__next",
@@ -26,5 +26,4 @@ $(function () {
   const datepicker = new Datepicker(date, {
     language: "zh-TW",
   });
-
 });

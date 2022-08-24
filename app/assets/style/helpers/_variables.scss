@@ -340,7 +340,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   // xl: 1200px,
-  // xxl: 1400px,,,,,,,,,,,,,,,
+  // xxl: 1400px,,,,,,,,,,,,,,,,
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -988,7 +988,8 @@ $nav-link-font-size: 1.125rem !default;
 $nav-link-font-weight: null !default;
 $nav-link-color: $white !default; //$link-color !default;
 $nav-link-hover-color: $primary !default; //$link-hover-color !default;
-$nav-link-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !default;
+$nav-link-transition: color 0.15s ease-in-out,
+  background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !default;
 $nav-link-disabled-color: $gray-600 !default;
 
 $nav-tabs-border-color: $gray-300 !default;
