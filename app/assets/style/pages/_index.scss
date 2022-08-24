@@ -229,19 +229,6 @@
         margin-left: 18px;
       }
     }
-    @include mac {
-    }
-  }
-  .dot {
-    display: block;
-    width: 8px;
-    height: 8px;
-    background: var(--bs-primary);
-    border-radius: 50%;
-  }
-  .round {
-    width: 16px;
-    border-radius: 20% 20% 20% 20%;
   }
   .swiper-pagination-bullet-active {
     --swiper-pagination-bullet-width: 1rem;
