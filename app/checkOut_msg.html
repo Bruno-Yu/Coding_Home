@@ -4,47 +4,67 @@ layout: ./app/layout.ejs
 engine: ejs
 ---
 
-<section class="progressBar py-6 d-block mb-6 mb-lg-12">
-  <div class="container">
-    <ul class="list-unstyled d-flex justify-content-between">
-      <li class="text-center">
-        <span class="progressBar__num active">1</span>
-        <p class="mt-2 text-primary">課程報名</p>
-      </li>
-      <li class="text-center">
-        <span class="progressBar__num active">2</span>
-        <p class="mt-2 text-primary">信用卡付款</p>
-      </li>
-      <li class="text-center">
-        <span class="progressBar__num active">3</span>
-        <p class="mt-2 text-primary">付款成功</p>
-      </li>
-    </ul>
-    <div class="progressBar__bar">
-      <div class="item bg-primary"></div>
-      <div class="item bg-primary"></div>
-    </div>
-  </div>
-</section>
-
-<div class="container pb-10 pb-lg-20">
-  <section class="creditCard__msg bg-secondary p-6 px-lg-8 py-lg-12">
-    <h4 class="mb-7 mb-lg-12 d-flex align-items-center justify-content-center">
-      <span
-        class="material-symbols-outlined fs-0 text-primary d-inline-block me-4"
-      >
-        verified
-      </span>
-      <span class=""> 信用卡付款</span>
-    </h4>
-
-    <p class="mb-6">
-      恭喜您已完成<span class="fw-bold"
-        >「2022 Python 全攻略｜從入門到實務」</span
-      >課程報名，請注意郵件訊息，家教老師將與您聯繫！
-    </p>
-    <div class="text-center">
-      <button class="btn bg-gradient">看看其他課程</button>
+<main>
+  <section class="progressBar pt-8 d-block mb-14 mb-lg-12 bg-lg-article">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-9 col-md-8 position-relative">
+          <div class="progress">
+            <div
+              class="progress-bar w-100"
+              role="progressbar"
+              aria-label="Progress"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <button
+            type="button"
+            class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill text-center p-0 fs-9 progressBar__stage active"
+          >
+            <span class="text-white">1</span>
+          </button>
+          <button
+            type="button"
+            class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill text-center p-0 fs-9 progressBar__stage active"
+          >
+            <span class="material-icons fs-9 text-white"> done </span>
+          </button>
+          <button
+            type="button"
+            class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-primary rounded-pill text-center p-0 fs-9 progressBar__stage active"
+          >
+            <span class="text-white">3</span>
+          </button>
+        </div>
+      </div>
     </div>
   </section>
-</div>
+
+  <div class="container pb-10 pb-lg-20">
+    <section class="creditCard__msg bg-secondary p-6 px-lg-8 py-lg-12">
+      <h4
+        class="mb-7 mb-lg-12 d-flex align-items-center justify-content-center"
+      >
+        <span
+          class="material-symbols-outlined fs-0 text-primary d-inline-block me-4"
+        >
+          verified
+        </span>
+        <span class=""> 信用卡付款</span>
+      </h4>
+
+      <p class="mb-6">
+        恭喜您已完成<span class="fw-bold"
+          >「2022 Python 全攻略｜從入門到實務」</span
+        >課程報名，請注意郵件訊息，家教老師將與您聯繫！
+      </p>
+      <div class="text-center">
+        <a href="./class.html" type="button" class="btn bg-gradient"
+          >看看其他課程</a
+        >
+      </div>
+    </section>
+  </div>
+</main>

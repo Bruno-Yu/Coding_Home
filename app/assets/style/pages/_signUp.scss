@@ -1,39 +1,54 @@
 .progressBar {
-  // background: var(--bs-secondary);
-  .container {
-    position: relative;
-    max-width: 832px;
+  @include mac {
+    height: 88px;
   }
-  &__num {
+  .progress {
+    height: 1px;
+  }
+  &__stage {
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    outline: 1px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--bs-secondary);
-    display: inline-block;
-    font-size: 14px;
-  }
-  .active {
-    background: var(--bs-primary);
+    line-height: 1;
     color: white;
-    outline: 1px solid var(--bs-primary);
-  }
-  &__bar {
-    top: 12px;
-    left: 28px;
-    display: flex;
-    width: calc(100% - 55px);
-    height: 1px;
-    background: #ffff;
-    position: absolute;
-    z-index: -1;
-    .item {
-      height: 1px;
-      width: 50%;
+    &:first-of-type {
+      &::after {
+        position: absolute;
+        writing-mode: horizontal-tb;
+        font-size: 16px;
+        width: 80px;
+        top: 28px;
+        left: -30px;
+        content: "課程報名";
+        color: inherit;
+      }
     }
+    &:nth-of-type(2) {
+      &::after {
+        position: absolute;
+        writing-mode: horizontal-tb;
+        font-size: 16px;
+        width: 80px;
+        top: 28px;
+        left: -30px;
+        content: "信用卡付款";
+        color: inherit;
+      }
+    }
+    &:last-of-type {
+      &::after {
+        position: absolute;
+        writing-mode: horizontal-tb;
+        font-size: 16px;
+        width: 80px;
+        top: 28px;
+        left: -30px;
+        content: "付款成功";
+        color: inherit;
+      }
+    }
+  }
+  &__stage.active {
+    color: var(--bs-primary);
   }
 }
 

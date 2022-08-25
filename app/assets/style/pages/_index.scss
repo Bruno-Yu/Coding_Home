@@ -189,8 +189,8 @@
   }
   &__swiper__img__position {
     position: relative;
-    top: -5px;
-    left: 5px;
+    top: -10px;
+    left: 10px;
   }
 
   &__swiper__content__position {
@@ -201,20 +201,33 @@
   &__swiper__content {
     border-radius: 32px 32px 32px 0px;
     padding: 24px;
+    padding-top: 0px;
     color: #494755;
     background: #ffff;
+    @include pad {
+      padding: 32px;
+      padding-top: 0px;
+    }
   }
   legend {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     z-index: 20;
+    @include pad {
+      width: 100px;
+      height: 100px;
+    }
   }
   &__swiper__content__avatar {
     object-fit: cover;
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    @include pad {
+      width: 100px;
+      height: 100px;
+    }
   }
   &__swiper__pagination {
     display: flex;
@@ -236,6 +249,6 @@
   }
 }
 
-.join.container {
-  max-width: 966px;
-}
+// .join.container {
+//   max-width: 966px;
+// }
